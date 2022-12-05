@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import trythis
+import py_print
