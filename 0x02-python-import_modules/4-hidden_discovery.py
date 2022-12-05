@@ -1,13 +1,8 @@
 #!/usr/bin/python3
-import hidden_4
-
-
-def discovr():
-    name = dir(hidden_4)
-    for i in name:
-        if i[:2] != '__':
-            print("{:s}".format(i))
-
-
 if __name__ == "__main__":
-    discovr()
+    import hidden_4
+    all_dir = dir(hidden_4)
+    avoid = "__"
+    for i in range(0, len(all_dir)):
+        if avoid not in all_dir[i]:
+            print(all_dir[i])
